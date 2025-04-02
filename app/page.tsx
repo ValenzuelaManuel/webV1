@@ -91,7 +91,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About</div>
                 <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">Biography</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Manuel Valenzuela is an acclaimed composer whose work spans orchestral, chamber, and solo piano
+                  Manuel Valenzuela isSS an acclaimed composer whose work spans orchestral, chamber, and solo piano
                   compositions. With a distinctive voice that blends classical traditions with contemporary elements,
                   his music has been performed in concert halls across the globe.
                 </p>
