@@ -59,7 +59,7 @@ export default function Home() {
                     Manuel Valenzuela
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    Composer • Pianist • Educator
+                    Composer • Producer • Educator
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -153,10 +153,10 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: "Nocturnal Visions",
-                  year: "2023",
-                  type: "Orchestral Suite",
-                  description: "A four-movement orchestral work exploring themes of night and dreams.",
+                  title: "Animal",
+                  year: "2024",
+                  type: "Chamber Music",
+                  description: "A .",
                 },
                 {
                   title: "String Quartet No. 2",
