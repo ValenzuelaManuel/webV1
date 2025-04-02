@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/GitHub/webV1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../components"
+		},
+		{
+			"path": "../hooks"
+		},
+		{
+			"path": "../lib"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../styles"
+		}
+	],
+	"settings": {}
+}
