@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <a 
-                 href="https://www.soundcloud.com" 
+                 href="https://www.youtube.com/@ManuelValenzuela" 
                  target="_blank" 
                    rel="noopener noreferrer"
                     >
@@ -81,9 +81,9 @@ export default function Home() {
                 </div>
               </div>
               <img
-                src="/placeholder.svg?height=800&width=600"
-                width="600"
-                height="800"
+                src="/retrato.jpeg?height=600&width=450"
+                width="450"
+                height="600"
                 alt="Manuel Valenzuela"
                 className="mx-auto aspect-[3/4] overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
@@ -159,40 +159,40 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
+                  title: "Agave",
+                  year: "2025",
+                  type: "Electronic",
+                  description: "Exploration on the materiality of work. Based on a field recording of jimadores cutting agave at Tequila. Part of Sonic Heritage Project, UK.",
+                },
+                {
                   title: "Animal",
                   year: "2024",
                   type: "Chamber Music",
-                  description: "A .",
+                  description: "Calm and melodic piece, for alto saxophone and guitar. Performed by Juan Jose Vara and Felipe Santibañez.",
                 },
                 {
-                  title: "String Quartet No. 2",
-                  year: "2022",
+                  title: "Cemetery of Splendour",
+                  year: "2023",
+                  type: "Mixed",
+                  description: "Both haunting and dramatic, this piece was inspired by the film of the same name by Apichatpong Weerasethakul. Performed by Fractal Guitar Trio, MX. ",
+                },
+                {
+                  title: "Memoria",
+                  year: "2023",
                   type: "Chamber Music",
-                  description: "An intimate exploration of counterpoint and harmonic tension.",
+                  description: "Impressionistic piece inspired by Apichatpong's film of the same name. Perfomed by Ensamble Contemporáneo UC.",
                 },
                 {
-                  title: "Piano Sonata in G minor",
-                  year: "2021",
-                  type: "Solo Piano",
-                  description: "A three-movement sonata in the classical tradition with modern harmonies.",
+                  title: "A veces nublado",
+                  year: "2023",
+                  type: "String Quartet",
+                  description: "Dramatic piece composed during the pandemic. An accesible introduction to my harmonic and rhyhtmic language.",
                 },
                 {
-                  title: "Reflections on Water",
-                  year: "2020",
-                  type: "Chamber Orchestra",
-                  description: "Impressionistic piece inspired by the movement of water.",
-                },
-                {
-                  title: "Three Songs for Soprano",
-                  year: "2019",
-                  type: "Vocal Music",
-                  description: "Settings of contemporary poetry for soprano and piano.",
-                },
-                {
-                  title: "Concerto for Violin",
-                  year: "2018",
-                  type: "Concerto",
-                  description: "A virtuosic showcase blending classical form with Latin rhythms.",
+                  title: "Desasosiego",
+                  year: "2022",
+                  type: "Solo",
+                  description: "A multipercussion piece for marimba and percussion set. Performed by Sebastian Nahuelcoy.",
                 },
               ].map((work, index) => (
                 <Card key={index} className="overflow-hidden">
@@ -232,22 +232,16 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl gap-8 py-12">
               {[
                 {
-                  date: "June 15, 2025",
-                  title: "Symphony Orchestra Concert",
-                  location: "National Concert Hall, Mexico City",
-                  work: "Nocturnal Visions (World Premiere)",
+                  date: "June 2025",
+                  title: ".abeceda Contemporary Music Festival",
+                  location: "Bled Festival Hall, Slovenia",
+                  work: "Entzauberung, for ensemble (premiere)",
                 },
                 {
-                  date: "July 8, 2025",
-                  title: "Chamber Music Festival",
-                  location: "Palacio de Bellas Artes, Madrid",
-                  work: "String Quartet No. 2",
-                },
-                {
-                  date: "August 22, 2025",
-                  title: "Piano Recital Series",
-                  location: "Carnegie Hall, New York",
-                  work: "Piano Sonata in G minor",
+                  date: "July 2025",
+                  title: "Valencia International Performing Arts Festival",
+                  location: "CSMV (Conservatorio Superior de Música de Valencia)",
+                  work: "Glitch, for string quartet and live electronics (premiere)",
                 },
               ].map((event, index) => (
                 <div key={index} className="flex flex-col gap-4 rounded-xl border p-6 md:flex-row md:items-center">
@@ -264,9 +258,6 @@ export default function Home() {
                       <span>{event.location}</span>
                     </div>
                     <p className="text-gray-500">Featuring: {event.work}</p>
-                  </div>
-                  <div className="ml-auto flex shrink-0 gap-2">
-                    <Button>Get Tickets</Button>
                   </div>
                 </div>
               ))}
