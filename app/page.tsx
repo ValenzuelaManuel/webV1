@@ -97,9 +97,8 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About</div>
                 <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">Biography</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Manuel Valenzuela isSS an acclaimed composer whose work spans orchestral, chamber, and solo piano
-                  compositions. With a distinctive voice that blends classical traditions with contemporary elements,
-                  his music has been performed in concert halls across the globe.
+                  Manuel Valenzuela is a Chilean composer and music educator based in Berlin, Germany. He holds a Bachelor's degree in Composition from the Pontifical Catholic University of Chile, where he studied under Aliocha Solovera and Cristian Morales-Ossio. He also has attended several masterclasses with composers such as Luis Naón and Richard Barrett. After completing his degree, he pursued studies in music pedagogy, a field in which he has worked at both the school and university levels. 
+
                 </p>
               </div>
             </div>
