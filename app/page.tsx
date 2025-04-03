@@ -26,9 +26,11 @@ export default function Home() {
               Contact
             </Link>
           </nav>
+          <Link href="#works">
           <Button variant="outline" size="sm" className="hidden md:flex">
             Listen
           </Button>
+          </Link>
           <Button variant="ghost" size="sm" className="md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +54,7 @@ export default function Home() {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_700px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -63,29 +65,25 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <a 
-                 href="https://www.youtube.com/@ManuelValenzuela" 
-                 target="_blank" 
-                   rel="noopener noreferrer"
-                    >
+                <Link href="#works">
                   <Button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                     Listen to My Music
                   </Button>
-                  </a>
+                  </Link>
+                  <Link href="#contact">
                   <Button
                     variant="outline"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   >
                     Contact Me
                   </Button>
+                  </Link>
                 </div>
-              </div>
+              </div> 
               <img
-                src="/retrato.jpeg?height=600&width=450"
-                width="450"
-                height="600"
+                src="/main.jpg"
                 alt="Manuel Valenzuela"
-                className="mx-auto aspect-[3/4] overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
             </div>
           </div>
@@ -103,7 +101,7 @@ export default function Home() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/retrato.jpeg?height=400&width=400"
                 width="400"
                 height="400"
                 alt="Manuel Valenzuela composing"
@@ -113,29 +111,13 @@ export default function Home() {
                 <ul className="grid gap-6">
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-semibold">Education</h3>
-                      <p className="text-gray-500 dark:text-gray-400">
-                        Graduated with honors from the National Conservatory of Music with a focus on composition and
-                        piano performance.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-semibold">Influences</h3>
-                      <p className="text-gray-500 dark:text-gray-400">
-                        Inspired by the works of Debussy, Ravel, and contemporary minimalist composers, while
-                        incorporating elements from Latin American musical traditions.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
                       <h3 className="text-xl font-semibold">Philosophy</h3>
-                      <p className="text-gray-500 dark:text-gray-400">
-                        Believes in creating music that bridges emotional depth with intellectual rigor, making
-                        contemporary classical music accessible to diverse audiences.
+                      <p>I don't aim to shock just for the sake of disruption. My practice is centered around discovery and growth, where each new piece represents an exploration of sonic possibilities. 
                       </p>
+                      <p>Sound is the foundation of my practice, and I use the resources at my disposal—extended techniques, unconventional approaches, or subtle alterations like microtones—not to ornament the score, but to build an immersive sonic world.
+                      </p>
+                       <p>I believe in balance: the blending of innovation with tradition, and the ongoing process of self-improvement that guides my work.
+                       </p>
                     </div>
                   </li>
                 </ul>
@@ -150,7 +132,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Compositions</div>
                 <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">Selected Works</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  A collection of Manuel Valenzuela's most significant compositions across various forms and ensembles.
+                  A collection of Valenzuela's most significant compositions across various ensembles.
                 </p>
               </div>
             </div>
@@ -231,7 +213,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Calendar</div>
                 <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">Upcoming Performances</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Where you can hear Manuel Valenzuela's music performed live in the coming months.
+                  Where you can hear Valenzuela's music performed live in the coming months.
                 </p>
               </div>
             </div>
@@ -246,7 +228,7 @@ export default function Home() {
                 {
                   date: "July 2025",
                   title: "Valencia International Performing Arts Festival",
-                  location: "CSMV (Conservatorio Superior de Música de Valencia)",
+                  location: "Conservatorio Superior de Música de Valencia, Spain",
                   work: "Glitch, for string quartet and live electronics (premiere)",
                 },
               ].map((event, index) => (
@@ -293,7 +275,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
-              <form className="grid gap-4">
+              <form id="contact" action="submit.php" method="post" className="grid gap-4">
                 <div className="grid gap-2">
                   <label
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
