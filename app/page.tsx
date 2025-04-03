@@ -97,8 +97,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About</div>
                 <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">Biography</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Manuel Valenzuela is a Chilean composer and music educator based in Berlin, Germany. He holds a Bachelor's degree in Composition from the Pontifical Catholic University of Chile, where he studied under Aliocha Solovera and Cristian Morales-Ossio. He also has attended several masterclasses with composers such as Luis Naón and Richard Barrett. After completing his degree, he pursued studies in music pedagogy, a field in which he has worked at both the school and university levels. 
-
+                  Manuel Valenzuela is a Chilean composer and music educator based in Berlin, Germany. He holds a Bachelor's degree in Composition from the Pontifical Catholic University of Chile, where he studied under Aliocha Solovera. He also has attended masterclasses with composers such as Luis Naón and Richard Barrett. After completing his degree, he pursued studies in music pedagogy, a field in which he has worked at both the school and university levels. 
                 </p>
               </div>
             </div>
@@ -161,6 +160,7 @@ export default function Home() {
                   title: "Agave",
                   year: "2025",
                   type: "Electronic",
+                  url: "https://soundcloud.com/manuelvalenzuelacomposer/agave-for-electronics",
                   description: "Exploration on the materiality of work. Based on a field recording of jimadores cutting agave at Tequila. Part of Sonic Heritage Project, UK.",
                 },
                 {
@@ -168,17 +168,20 @@ export default function Home() {
                   year: "2024",
                   type: "Chamber Music",
                   description: "Calm and melodic piece, for alto saxophone and guitar. Performed by Juan Jose Vara and Felipe Santibañez.",
+                  url: "https://soundcloud.com/manuelvalenzuelacomposer/animal-for-alto-saxophone-and-guitar-2024"
                 },
                 {
                   title: "Cemetery of Splendour",
                   year: "2023",
                   type: "Mixed",
+                  url: "https://www.youtube.com/watch?v=uKHuEdyxnJc",
                   description: "Both haunting and dramatic, this piece was inspired by the film of the same name by Apichatpong Weerasethakul. Performed by Fractal Guitar Trio, MX. ",
                 },
                 {
                   title: "Memoria",
                   year: "2023",
                   type: "Chamber Music",
+                  url: "https://www.youtube.com/watch?v=Ut5qYY2daFY",
                   description: "Impressionistic piece inspired by Apichatpong's film of the same name. Perfomed by Ensamble Contemporáneo UC.",
                 },
                 {
@@ -186,11 +189,13 @@ export default function Home() {
                   year: "2023",
                   type: "String Quartet",
                   description: "Dramatic piece composed during the pandemic. An accesible introduction to my harmonic and rhyhtmic language.",
+                  url: "https://www.youtube.com/watch?v=TXItts3C6II"
                 },
                 {
                   title: "Desasosiego",
                   year: "2022",
                   type: "Solo",
+                  url: "https://www.youtube.com/watch?v=nUKn4spuyqs",
                   description: "A multipercussion piece for marimba and percussion set. Performed by Sebastian Nahuelcoy.",
                 },
               ].map((work, index) => (
@@ -205,10 +210,12 @@ export default function Home() {
                       <p className="text-sm text-gray-500">{work.year}</p>
                       <p className="mt-2 text-gray-500">{work.description}</p>
                       <div className="mt-4 flex items-center gap-2">
-                        <Button variant="outline" size="sm" className="gap-1">
-                          <Play className="h-3.5 w-3.5" />
-                          Listen
-                        </Button>
+                      <a href={work.url} target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" size="sm" className="gap-1">
+    <Play className="h-3.5 w-3.5" />
+    Listen
+  </Button>
+</a>
                       </div>
                     </div>
                   </CardContent>
@@ -273,10 +280,16 @@ export default function Home() {
                 email.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+              <a 
+                 href="mailto:mvalenzuelacomposer@icloud.com" 
+                 target="_blank" 
+                   rel="noopener noreferrer"
+                    >
+                  <Button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Directly
                 </Button>
+                </a>
               </div>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
