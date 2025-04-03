@@ -170,7 +170,7 @@ export default function Home() {
                   title: "A veces nublado",
                   year: "2023",
                   type: "String Quartet",
-                  description: "Dramatic piece composed during the pandemic. An accesible introduction to my harmonic and rhyhtmic language.",
+                  description: "Dramatic piece composed during the pandemic. An accessible introduction to my harmonic and rhyhtmic language.",
                   url: "https://www.youtube.com/watch?v=TXItts3C6II"
                 },
                 {
